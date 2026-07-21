@@ -8,6 +8,11 @@
   --espacamento-padrao: 1rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 nav {
     background-color: var(--cor-primaria);
@@ -46,16 +51,21 @@ main img{
     border:  var(--borda-padrao);
     padding: 2px;
     box-shadow: 0px 2px 15px #333333;
+    float: right;
+    margin: 0 0 var(--espacamento-padrao) var(--espacamento-padrao);
 }
 
 aside {
     width: 20rem;
-    margin: var(--espacamento-padrao);
-    border: var(--borda-padrao);
-    padding:  var(--espacamento-padrao);
-    background-color: var(--cor-fundo-aside);
-    color: var(--cor-texto-claro);
     text-align: center;
+    position: relative;
+
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 110px;
 }
 
 aside img {
@@ -67,4 +77,18 @@ footer {
     margin-top: 20px;
     border-top: var(--borda-padrao);
     text-align: center;
+}
+
+/* Seletores de Classe */
+
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+ul.caixa {
+  clear: both;
 }
