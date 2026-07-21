@@ -1,22 +1,33 @@
+:root {
+  --cor-primaria: darkblue;
+  --cor-texto-claro: #ffffff;
+  --cor-borda: #000000;
+  --cor-fundo-aside: #646262;
+  --borda-padrao: 1px solid var(--cor-borda);
+  --largura-imagem-padrao: 150px;
+  --espacamento-padrao: 1rem;
+}
+
+
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-primaria);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--cor-texto-claro);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-primaria);
 }
 
 img {
-    width: 150px;
+    width: var(--largura-imagem-padrao);
     height: auto;
-    border: 1px solid black;
+    border: var(--borda-padrao);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -30,20 +41,20 @@ main {
 }
 
 main img{
-    width: 150px;
+    width: var(--largura-imagem-padrao);
     height: auto;
-    border:  1px solid black;
+    border:  var(--borda-padrao);
     padding: 2px;
     box-shadow: 0px 2px 15px #333333;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid black;
-    padding:  1rem;
-    background-color: #646262;
-    color: #ffffff;
+    margin: var(--espacamento-padrao);
+    border: var(--borda-padrao);
+    padding:  var(--espacamento-padrao);
+    background-color: var(--cor-fundo-aside);
+    color: var(--cor-texto-claro);
     text-align: center;
 }
 
@@ -54,6 +65,6 @@ aside img {
 
 footer {
     margin-top: 20px;
-    border-top: 1px solid #000;
+    border-top: var(--borda-padrao);
     text-align: center;
 }
