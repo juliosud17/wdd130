@@ -89,6 +89,11 @@ footer {
   color: #000;
 }
 
+.caixa li a {
+  display: inline-block;
+  padding: 6px 4px;
+}
+
 ul.caixa {
   clear: both;
 }
